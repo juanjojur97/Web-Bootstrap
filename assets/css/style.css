@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "my-header"
+    "my-main"
+    "my-footer";
+}
+
+header{
+    grid-area: my-header;
+
+}
+main{
+    grid-area: my-main;
+}
+footer{
+    grid-area: my-footer;
+}
+.carousel-item img{
+    height: 400px;
+    object-fit: cover;
+}
+.hover{
+    transition: transform 0.3s ease;
+}
+.hover:hover{
+    transform: scale(1.1);
+}
+#map{
+    height: 800px;
+}
